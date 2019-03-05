@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="form-container">
+        <form>
+            <div class="form-items">
+                <!-- Select tags -->
+                <select name="Country"></select>
+                <select name="State"></select>
+                <select name="City"></select>
+            </div>
+            <div class="button-container">
+                <button class="print-btn" disabled>Print</button>
+            </div>
+        </form>
+    </div>
+    <div class="output-container">
+        <!-- Output container for result -->
+        <div class="output-heading">
+            Let Ajax Change This Text
+        </div>
+        <div class="print-result hide">
+            <!-- output data with lable -->
+            <div class="print-item">
+                <span class="label">Country :</span> 
+                <span id="selected-country"></span>
+            </div>
+            <div class="print-item">
+               <span class="label">State :</span> 
+               <span id="selected-state"></span>
+            </div>
+            <div class="print-item">
+                <span class="label">City :</span>
+                <span id="selected-city"></span>
+            </div>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
